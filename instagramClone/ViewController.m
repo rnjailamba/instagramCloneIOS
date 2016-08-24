@@ -16,7 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.frame = [[UIScreen mainScreen] bounds ];
     // Do any additional setup after loading the view, typically from a nib.
+}
+- (void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    [super viewWillAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning {
