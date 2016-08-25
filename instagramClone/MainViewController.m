@@ -10,6 +10,9 @@
 
 @interface MainViewController ()
 
+- (IBAction)mailClicked:(id)sender;
+- (IBAction)addClicked:(id)sender;
+
 @end
 
 @implementation MainViewController
@@ -35,4 +38,6 @@
 }
 */
 
+- (IBAction)mailClicked:(id)sender {
+}
 @end

@@ -23,12 +23,23 @@
                         <constraint firstAttribute="height" constant="24" id="NlQ-bX-GsQ"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYn-V4-5yj" userLabel="right">
+                    <rect key="frame" x="288" y="27" width="24" height="24"/>
+                    <animations/>
+                    <connections>
+                        <action selector="rightClicked:" destination="-1" eventType="touchUpInside" id="UFW-O5-Mmn"/>
+                    </connections>
+                </button>
             </subviews>
             <animations/>
             <color key="backgroundColor" red="0.0" green="0.99072283319999999" blue="0.49842997030000002" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="NYn-V4-5yj" firstAttribute="bottom" secondItem="bHx-pF-xVR" secondAttribute="bottom" id="0Ye-7i-szh"/>
+                <constraint firstItem="NYn-V4-5yj" firstAttribute="leading" secondItem="bHx-pF-xVR" secondAttribute="leading" id="2vW-vP-Gwg"/>
                 <constraint firstItem="bHx-pF-xVR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="27" id="BHD-hb-gu8"/>
+                <constraint firstItem="NYn-V4-5yj" firstAttribute="top" secondItem="bHx-pF-xVR" secondAttribute="top" id="YL9-Ly-eXd"/>
                 <constraint firstAttribute="trailing" secondItem="bHx-pF-xVR" secondAttribute="trailing" constant="8" id="crg-xt-Ia7"/>
+                <constraint firstItem="NYn-V4-5yj" firstAttribute="trailing" secondItem="bHx-pF-xVR" secondAttribute="trailing" id="eNS-xa-deb"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>

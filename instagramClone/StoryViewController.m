@@ -9,6 +9,7 @@
 #import "StoryViewController.h"
 
 @interface StoryViewController ()
+- (IBAction)rightClicked:(id)sender;
 
 @end
 
@@ -36,4 +37,8 @@
 }
 */
 
+- (IBAction)rightClicked:(id)sender {
+    [self.delegate goToMainFromStoryClicked];
+    
+}
 @end

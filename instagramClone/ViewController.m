@@ -12,7 +12,7 @@
 #import "MessageViewController.h"
 
 
-@interface ViewController () <UIPageViewControllerDataSource >
+@interface ViewController () <UIPageViewControllerDataSource, StoryViewDelegate >
 
 @property (strong, nonatomic) UIPageViewController *pageController;
 @property (strong, nonatomic) MainViewController *mainVC;
@@ -27,10 +27,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.frame = [[UIScreen mainScreen] bounds ];
+    [self setUpViews];
+    [self setUpPageViewController];
+    // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)setUpViews{
     self.mainVC = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
     self.storyVC = [[StoryViewController alloc] initWithNibName:@"StoryViewController" bundle:nil];
     self.messageVC = [[MessageViewController alloc] initWithNibName:@"MessageViewController" bundle:nil];
-    
+    self.storyVC.delegate = self;
+}
+
+-(void)setUpPageViewController{
     self.pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     
     self.pageController.dataSource = self;
@@ -43,8 +52,8 @@
     [self addChildViewController:self.pageController];
     [[self view] addSubview:[self.pageController view]];
     [self.pageController didMoveToParentViewController:self];
-    // Do any additional setup after loading the view, typically from a nib.
 }
+
 - (void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:YES animated:NO];
     [super viewWillAppear:animated];
@@ -84,6 +93,10 @@
     
 }
 
+#pragma StoryViewDelegate
+-(void)goToMainFromStoryClicked{
+    
+}
 //- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
 //    // The number of items reflected in the page indicator.
 //    return 3;

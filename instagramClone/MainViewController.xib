@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -26,6 +27,17 @@
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail.png" translatesAutoresizingMaskIntoConstraints="NO" id="pro-Wo-ITU">
+                            <rect key="frame" x="288" y="27" width="24" height="24"/>
+                            <animations/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ejt-LV-gcb" userLabel="mail">
+                            <rect key="frame" x="288" y="27" width="24" height="24"/>
+                            <animations/>
+                            <connections>
+                                <action selector="mailClicked:" destination="-1" eventType="touchUpInside" id="Gjl-JK-mKb"/>
+                            </connections>
+                        </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add.png" translatesAutoresizingMaskIntoConstraints="NO" id="AL1-e5-YAc">
                             <rect key="frame" x="8" y="27" width="24" height="24"/>
                             <animations/>
@@ -33,25 +45,40 @@
                                 <constraint firstAttribute="width" constant="24" id="dhv-05-EJf"/>
                             </constraints>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail.png" translatesAutoresizingMaskIntoConstraints="NO" id="pro-Wo-ITU">
-                            <rect key="frame" x="288" y="27" width="24" height="24"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGO-5H-RLP" userLabel="add">
+                            <rect key="frame" x="8" y="27" width="24" height="24"/>
                             <animations/>
-                        </imageView>
+                            <connections>
+                                <action selector="addClicked:" destination="-1" eventType="touchUpInside" id="HSd-6x-aUg"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <animations/>
                     <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="rLp-LN-QSP" firstAttribute="leading" secondItem="AL1-e5-YAc" secondAttribute="trailing" constant="28" id="1S1-zg-AWF"/>
+                        <constraint firstItem="Ejt-LV-gcb" firstAttribute="bottom" secondItem="UGO-5H-RLP" secondAttribute="bottom" id="21v-QK-TG7"/>
                         <constraint firstAttribute="bottom" secondItem="rLp-LN-QSP" secondAttribute="bottom" constant="4" id="6VY-h6-2Dp"/>
+                        <constraint firstItem="Ejt-LV-gcb" firstAttribute="baseline" secondItem="UGO-5H-RLP" secondAttribute="baseline" id="9cj-6Y-lQf"/>
                         <constraint firstItem="pro-Wo-ITU" firstAttribute="trailing" secondItem="zRT-HR-HE7" secondAttribute="trailingMargin" id="9e5-IT-cfj"/>
                         <constraint firstItem="rLp-LN-QSP" firstAttribute="centerY" secondItem="AL1-e5-YAc" secondAttribute="centerY" id="DW7-o5-XNT"/>
+                        <constraint firstItem="UGO-5H-RLP" firstAttribute="trailing" secondItem="AL1-e5-YAc" secondAttribute="trailing" id="EMK-4c-34i"/>
                         <constraint firstItem="pro-Wo-ITU" firstAttribute="top" secondItem="AL1-e5-YAc" secondAttribute="top" id="G8G-4p-0Bv"/>
+                        <constraint firstItem="UGO-5H-RLP" firstAttribute="firstBaseline" secondItem="Ejt-LV-gcb" secondAttribute="firstBaseline" id="GGo-7J-39x"/>
+                        <constraint firstItem="Ejt-LV-gcb" firstAttribute="bottom" secondItem="pro-Wo-ITU" secondAttribute="bottom" id="JEV-j3-TuY"/>
                         <constraint firstItem="pro-Wo-ITU" firstAttribute="leading" secondItem="rLp-LN-QSP" secondAttribute="trailing" constant="28" id="MRk-IJ-U7E"/>
                         <constraint firstItem="AL1-e5-YAc" firstAttribute="top" secondItem="zRT-HR-HE7" secondAttribute="top" constant="27" id="RdO-0x-x3o"/>
+                        <constraint firstItem="Ejt-LV-gcb" firstAttribute="leading" secondItem="pro-Wo-ITU" secondAttribute="leading" id="Rww-nL-52J"/>
                         <constraint firstItem="AL1-e5-YAc" firstAttribute="leading" secondItem="zRT-HR-HE7" secondAttribute="leadingMargin" id="VOg-up-OTi"/>
+                        <constraint firstItem="Ejt-LV-gcb" firstAttribute="top" secondItem="pro-Wo-ITU" secondAttribute="top" id="Ybc-NC-IaR"/>
+                        <constraint firstItem="Ejt-LV-gcb" firstAttribute="trailing" secondItem="pro-Wo-ITU" secondAttribute="trailing" id="eh2-Ob-zne"/>
                         <constraint firstItem="rLp-LN-QSP" firstAttribute="top" secondItem="zRT-HR-HE7" secondAttribute="top" constant="21" id="hV3-gv-gI8"/>
+                        <constraint firstItem="UGO-5H-RLP" firstAttribute="baseline" secondItem="Ejt-LV-gcb" secondAttribute="baseline" id="kZf-3Z-5J0"/>
                         <constraint firstItem="rLp-LN-QSP" firstAttribute="centerX" secondItem="zRT-HR-HE7" secondAttribute="centerX" id="ogZ-o0-qwl"/>
+                        <constraint firstItem="UGO-5H-RLP" firstAttribute="leading" secondItem="AL1-e5-YAc" secondAttribute="leading" id="qSj-RB-AL2"/>
+                        <constraint firstItem="Ejt-LV-gcb" firstAttribute="firstBaseline" secondItem="UGO-5H-RLP" secondAttribute="firstBaseline" id="rOP-1b-rys"/>
                         <constraint firstItem="AL1-e5-YAc" firstAttribute="bottom" secondItem="pro-Wo-ITU" secondAttribute="bottom" id="tkv-py-mdq"/>
+                        <constraint firstItem="Ejt-LV-gcb" firstAttribute="top" secondItem="UGO-5H-RLP" secondAttribute="top" id="zuJ-iD-ciT"/>
                     </constraints>
                 </view>
             </subviews>

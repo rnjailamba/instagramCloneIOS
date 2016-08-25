@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -30,6 +31,13 @@
                             <rect key="frame" x="288" y="27" width="24" height="24"/>
                             <animations/>
                         </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mq2-bD-YNK" userLabel="plus">
+                            <rect key="frame" x="288" y="27" width="24" height="24"/>
+                            <animations/>
+                            <connections>
+                                <action selector="plusClicked:" destination="-1" eventType="touchUpInside" id="B0p-AE-OAg"/>
+                            </connections>
+                        </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left.png" translatesAutoresizingMaskIntoConstraints="NO" id="BLi-ZM-CUa">
                             <rect key="frame" x="8" y="27" width="24" height="24"/>
                             <animations/>
@@ -37,20 +45,39 @@
                                 <constraint firstAttribute="width" constant="24" id="ax3-gT-cTI"/>
                             </constraints>
                         </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoY-pi-GUl" userLabel="left">
+                            <rect key="frame" x="8" y="27" width="24" height="24"/>
+                            <animations/>
+                            <connections>
+                                <action selector="leftClicked:" destination="-1" eventType="touchUpInside" id="qM6-l0-dv3"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <animations/>
                     <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstItem="mq2-bD-YNK" firstAttribute="leading" secondItem="nhb-lT-EVm" secondAttribute="leading" id="5lz-l7-b04"/>
                         <constraint firstItem="BLi-ZM-CUa" firstAttribute="leading" secondItem="g9h-2O-nQx" secondAttribute="leadingMargin" id="BU1-Sw-vqV"/>
+                        <constraint firstItem="mq2-bD-YNK" firstAttribute="bottom" secondItem="nhb-lT-EVm" secondAttribute="bottom" id="D15-4B-SpN"/>
                         <constraint firstItem="BLi-ZM-CUa" firstAttribute="top" secondItem="nhb-lT-EVm" secondAttribute="top" id="G9h-HL-xsu"/>
                         <constraint firstItem="mFa-DG-wh3" firstAttribute="centerY" secondItem="BLi-ZM-CUa" secondAttribute="centerY" id="KZS-he-gpa"/>
                         <constraint firstAttribute="height" constant="60" id="PPP-yb-qWu"/>
+                        <constraint firstItem="mq2-bD-YNK" firstAttribute="bottom" secondItem="FoY-pi-GUl" secondAttribute="bottom" id="Thk-hV-9d3"/>
                         <constraint firstItem="mFa-DG-wh3" firstAttribute="top" secondItem="g9h-2O-nQx" secondAttribute="top" constant="21" id="Vq3-ht-Bio"/>
                         <constraint firstItem="nhb-lT-EVm" firstAttribute="leading" secondItem="mFa-DG-wh3" secondAttribute="trailing" constant="28" id="aFZ-CC-La8"/>
+                        <constraint firstItem="mq2-bD-YNK" firstAttribute="firstBaseline" secondItem="FoY-pi-GUl" secondAttribute="firstBaseline" id="blU-hu-nwU"/>
                         <constraint firstItem="BLi-ZM-CUa" firstAttribute="top" secondItem="g9h-2O-nQx" secondAttribute="top" constant="27" id="caA-5B-3mM"/>
                         <constraint firstItem="mFa-DG-wh3" firstAttribute="leading" secondItem="BLi-ZM-CUa" secondAttribute="trailing" constant="28" id="eAO-dw-Dn6"/>
+                        <constraint firstItem="FoY-pi-GUl" firstAttribute="baseline" secondItem="mq2-bD-YNK" secondAttribute="baseline" id="fGS-1e-7Wf"/>
+                        <constraint firstItem="FoY-pi-GUl" firstAttribute="leading" secondItem="BLi-ZM-CUa" secondAttribute="leading" id="jkf-gN-IaA"/>
+                        <constraint firstItem="mq2-bD-YNK" firstAttribute="top" secondItem="nhb-lT-EVm" secondAttribute="top" id="oQL-PP-6bP"/>
+                        <constraint firstItem="FoY-pi-GUl" firstAttribute="trailing" secondItem="BLi-ZM-CUa" secondAttribute="trailing" id="oyT-x0-PlE"/>
+                        <constraint firstItem="mq2-bD-YNK" firstAttribute="top" secondItem="FoY-pi-GUl" secondAttribute="top" id="qHv-AQ-bUK"/>
+                        <constraint firstItem="mq2-bD-YNK" firstAttribute="trailing" secondItem="nhb-lT-EVm" secondAttribute="trailing" id="qUY-6g-DnT"/>
                         <constraint firstItem="mFa-DG-wh3" firstAttribute="centerX" secondItem="g9h-2O-nQx" secondAttribute="centerX" id="qoy-qz-9ib"/>
+                        <constraint firstItem="mq2-bD-YNK" firstAttribute="baseline" secondItem="FoY-pi-GUl" secondAttribute="baseline" id="ucC-gr-OwK"/>
                         <constraint firstItem="BLi-ZM-CUa" firstAttribute="bottom" secondItem="nhb-lT-EVm" secondAttribute="bottom" id="x0e-8e-IXO"/>
+                        <constraint firstItem="FoY-pi-GUl" firstAttribute="firstBaseline" secondItem="mq2-bD-YNK" secondAttribute="firstBaseline" id="x9d-pM-DMD"/>
                         <constraint firstAttribute="bottom" secondItem="mFa-DG-wh3" secondAttribute="bottom" constant="4" id="xnW-AZ-J8q"/>
                         <constraint firstItem="nhb-lT-EVm" firstAttribute="trailing" secondItem="g9h-2O-nQx" secondAttribute="trailingMargin" id="zZ8-4J-Z9y"/>
                     </constraints>

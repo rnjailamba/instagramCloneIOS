@@ -9,6 +9,8 @@
 #import "MessageViewController.h"
 
 @interface MessageViewController ()
+- (IBAction)plusClicked:(id)sender;
+- (IBAction)leftClicked:(id)sender;
 
 @end
 
@@ -36,4 +38,6 @@
 }
 */
 
+- (IBAction)plusClicked:(id)sender {
+}
 @end
