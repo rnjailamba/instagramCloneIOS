@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9060"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageViewController">
@@ -14,8 +14,23 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUc-6L-1D9">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="FIF-C1-tyE"/>
+                    </constraints>
+                </view>
+            </subviews>
             <animations/>
             <color key="backgroundColor" red="1" green="0.35699051069999999" blue="0.26239097830000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="VUc-6L-1D9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="92C-QO-kwc"/>
+                <constraint firstAttribute="trailing" secondItem="VUc-6L-1D9" secondAttribute="trailing" id="Qbg-5z-Zhv"/>
+                <constraint firstItem="VUc-6L-1D9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wPT-18-3qQ"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
