@@ -12,7 +12,7 @@
 #import "MessageViewController.h"
 
 
-@interface ViewController () <UIPageViewControllerDataSource, StoryViewDelegate >
+@interface ViewController () <UIPageViewControllerDataSource, StoryViewDelegate, MainViewControllerDelegate >
 
 @property (strong, nonatomic) UIPageViewController *pageController;
 @property (strong, nonatomic) MainViewController *mainVC;
@@ -28,7 +28,7 @@
     [super viewDidLoad];
     self.view.frame = [[UIScreen mainScreen] bounds ];
     [self setUpViews];
-    [self setUpPageViewController];
+    [self setUpPageViewControllerToOpenToMain];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -37,9 +37,10 @@
     self.storyVC = [[StoryViewController alloc] initWithNibName:@"StoryViewController" bundle:nil];
     self.messageVC = [[MessageViewController alloc] initWithNibName:@"MessageViewController" bundle:nil];
     self.storyVC.delegate = self;
+    self.mainVC.delegate = self;
 }
 
--(void)setUpPageViewController{
+-(void)setUpPageViewControllerToOpenToMain{
     self.pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     
     self.pageController.dataSource = self;
@@ -95,16 +96,20 @@
 
 #pragma StoryViewDelegate
 -(void)goToMainFromStoryClicked{
-    
+    NSArray *viewControllers = [NSArray arrayWithObject:self.mainVC];
+    [self.pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
 }
-//- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
-//    // The number of items reflected in the page indicator.
-//    return 3;
-//}
-//
-//- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
-//    // The selected item reflected in the page indicator.
-//    return 0;
-//}
+
+#pragma MainViewControllerDelegate
+-(void)goToStoryFromMainClicked{
+    NSArray *viewControllers = [NSArray arrayWithObject:self.storyVC];
+    [self.pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:nil];
+}
+
+-(void)goToMessageFromMainClicked{
+    NSArray *viewControllers = [NSArray arrayWithObject:self.messageVC];
+    [self.pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+}
+
 
 @end

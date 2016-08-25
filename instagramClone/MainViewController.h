@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol MainViewControllerDelegate <NSObject>
+
+@required
+-(void) goToMessageFromMainClicked;
+-(void) goToStoryFromMainClicked;
+
+@end
+
 @interface MainViewController : UIViewController
+
+@property id<MainViewControllerDelegate> delegate;
 
 @end

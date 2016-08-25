@@ -39,5 +39,12 @@
 */
 
 - (IBAction)mailClicked:(id)sender {
+    [self.delegate goToMessageFromMainClicked];
+
+}
+
+- (IBAction)addClicked:(id)sender {
+    [self.delegate goToStoryFromMainClicked];
+
 }
 @end
