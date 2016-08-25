@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "StoryViewController.h"
+#import "MainViewController.h"
+#import "MessageViewController.h"
+
 
 @interface ViewController ()
 
