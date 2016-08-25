@@ -2,7 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9060"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
@@ -17,21 +18,56 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRT-HR-HE7">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clonegram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLp-LN-QSP">
+                            <rect key="frame" x="60" y="21" width="200" height="35"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add.png" translatesAutoresizingMaskIntoConstraints="NO" id="AL1-e5-YAc">
+                            <rect key="frame" x="8" y="27" width="24" height="24"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="dhv-05-EJf"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail.png" translatesAutoresizingMaskIntoConstraints="NO" id="pro-Wo-ITU">
+                            <rect key="frame" x="288" y="27" width="24" height="24"/>
+                            <animations/>
+                        </imageView>
+                    </subviews>
                     <animations/>
                     <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="60" id="3ns-vm-iru"/>
+                        <constraint firstItem="rLp-LN-QSP" firstAttribute="leading" secondItem="AL1-e5-YAc" secondAttribute="trailing" constant="28" id="1S1-zg-AWF"/>
+                        <constraint firstAttribute="bottom" secondItem="rLp-LN-QSP" secondAttribute="bottom" constant="4" id="6VY-h6-2Dp"/>
+                        <constraint firstItem="pro-Wo-ITU" firstAttribute="trailing" secondItem="zRT-HR-HE7" secondAttribute="trailingMargin" id="9e5-IT-cfj"/>
+                        <constraint firstItem="rLp-LN-QSP" firstAttribute="centerY" secondItem="AL1-e5-YAc" secondAttribute="centerY" id="DW7-o5-XNT"/>
+                        <constraint firstItem="pro-Wo-ITU" firstAttribute="top" secondItem="AL1-e5-YAc" secondAttribute="top" id="G8G-4p-0Bv"/>
+                        <constraint firstItem="pro-Wo-ITU" firstAttribute="leading" secondItem="rLp-LN-QSP" secondAttribute="trailing" constant="28" id="MRk-IJ-U7E"/>
+                        <constraint firstItem="AL1-e5-YAc" firstAttribute="top" secondItem="zRT-HR-HE7" secondAttribute="top" constant="27" id="RdO-0x-x3o"/>
+                        <constraint firstItem="AL1-e5-YAc" firstAttribute="leading" secondItem="zRT-HR-HE7" secondAttribute="leadingMargin" id="VOg-up-OTi"/>
+                        <constraint firstItem="rLp-LN-QSP" firstAttribute="top" secondItem="zRT-HR-HE7" secondAttribute="top" constant="21" id="hV3-gv-gI8"/>
+                        <constraint firstItem="rLp-LN-QSP" firstAttribute="centerX" secondItem="zRT-HR-HE7" secondAttribute="centerX" id="ogZ-o0-qwl"/>
+                        <constraint firstItem="AL1-e5-YAc" firstAttribute="bottom" secondItem="pro-Wo-ITU" secondAttribute="bottom" id="tkv-py-mdq"/>
                     </constraints>
                 </view>
             </subviews>
             <animations/>
             <color key="backgroundColor" red="0.94602117770000005" green="1" blue="0.63736948630000001" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="zRT-HR-HE7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QQ4-yG-s80"/>
-                <constraint firstAttribute="trailing" secondItem="zRT-HR-HE7" secondAttribute="trailing" id="jNK-Uf-MeX"/>
-                <constraint firstItem="zRT-HR-HE7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uJ1-K0-s33"/>
+                <constraint firstItem="zRT-HR-HE7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2cF-fc-mB6"/>
+                <constraint firstAttribute="bottom" secondItem="zRT-HR-HE7" secondAttribute="bottom" constant="508" id="3JB-I1-pVP"/>
+                <constraint firstItem="zRT-HR-HE7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uIi-x3-xuB"/>
+                <constraint firstAttribute="trailing" secondItem="zRT-HR-HE7" secondAttribute="trailing" id="xIZ-kB-FW2"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
+    <resources>
+        <image name="add.png" width="32" height="32"/>
+        <image name="mail.png" width="32" height="32"/>
+    </resources>
 </document>
