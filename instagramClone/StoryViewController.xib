@@ -14,9 +14,26 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right.png" translatesAutoresizingMaskIntoConstraints="NO" id="bHx-pF-xVR">
+                    <rect key="frame" x="288" y="27" width="24" height="24"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="4BP-b9-YMb"/>
+                        <constraint firstAttribute="height" constant="24" id="NlQ-bX-GsQ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
             <animations/>
             <color key="backgroundColor" red="0.0" green="0.99072283319999999" blue="0.49842997030000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="bHx-pF-xVR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="27" id="BHD-hb-gu8"/>
+                <constraint firstAttribute="trailing" secondItem="bHx-pF-xVR" secondAttribute="trailing" constant="8" id="crg-xt-Ia7"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
+    <resources>
+        <image name="right.png" width="32" height="32"/>
+    </resources>
 </document>

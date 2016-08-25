@@ -17,6 +17,9 @@
 		02EC17931D6E0AB9001BFCFC /* StoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02EC17911D6E0AB9001BFCFC /* StoryViewController.xib */; };
 		63179B2E1D6EAFE2001C4A35 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 63179B2D1D6EAFE2001C4A35 /* mail.png */; };
 		63179B301D6EB080001C4A35 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 63179B2F1D6EB080001C4A35 /* add.png */; };
+		63179B321D6EBD41001C4A35 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 63179B311D6EBD41001C4A35 /* plus.png */; };
+		63179B341D6EBD47001C4A35 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = 63179B331D6EBD47001C4A35 /* left.png */; };
+		63179B361D6EBD8A001C4A35 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 63179B351D6EBD8A001C4A35 /* right.png */; };
 		63F97C8C1D6AB49B00F06FB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F97C8B1D6AB49B00F06FB1 /* main.m */; };
 		63F97C8F1D6AB49B00F06FB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F97C8E1D6AB49B00F06FB1 /* AppDelegate.m */; };
 		63F97C921D6AB49B00F06FB1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F97C911D6AB49B00F06FB1 /* ViewController.m */; };
@@ -37,6 +40,9 @@
 		02EC17911D6E0AB9001BFCFC /* StoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryViewController.xib; sourceTree = "<group>"; };
 		63179B2D1D6EAFE2001C4A35 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
 		63179B2F1D6EB080001C4A35 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		63179B311D6EBD41001C4A35 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		63179B331D6EBD47001C4A35 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		63179B351D6EBD8A001C4A35 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
 		63F97C871D6AB49B00F06FB1 /* instagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F97C8B1D6AB49B00F06FB1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		63F97C8D1D6AB49B00F06FB1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				63179B2F1D6EB080001C4A35 /* add.png */,
+				63179B311D6EBD41001C4A35 /* plus.png */,
+				63179B331D6EBD47001C4A35 /* left.png */,
+				63179B351D6EBD8A001C4A35 /* right.png */,
 				63179B2D1D6EAFE2001C4A35 /* mail.png */,
 			);
 			name = Graphics;
@@ -176,10 +185,13 @@
 			files = (
 				02EC17821D6DEAC4001BFCFC /* ViewController.xib in Resources */,
 				63179B2E1D6EAFE2001C4A35 /* mail.png in Resources */,
+				63179B361D6EBD8A001C4A35 /* right.png in Resources */,
 				02EC178E1D6E0AA7001BFCFC /* MessageViewController.xib in Resources */,
 				63179B301D6EB080001C4A35 /* add.png in Resources */,
+				63179B341D6EBD47001C4A35 /* left.png in Resources */,
 				02EC17931D6E0AB9001BFCFC /* StoryViewController.xib in Resources */,
 				63F97C971D6AB49B00F06FB1 /* Assets.xcassets in Resources */,
+				63179B321D6EBD41001C4A35 /* plus.png in Resources */,
 				02EC17841D6DEBCC001BFCFC /* Default-568h@2x.png in Resources */,
 				02EC17891D6E0A97001BFCFC /* MainViewController.xib in Resources */,
 			);
