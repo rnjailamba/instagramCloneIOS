@@ -56,30 +56,42 @@
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
-    if(true){
-        return self.messageVC;
+    if(viewController == self.mainVC){
+        return self.storyVC;
     }
-    
+    else if (viewController == self.messageVC){
+        return self.mainVC;
+    }
+    else{
+        return nil;
+    }
     
     
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
     
-    if(true){
+    if(viewController == self.mainVC){
         return self.messageVC;
     }
+    else if (viewController == self.storyVC){
+        return self.mainVC;
+    }
+    else{
+        return nil;
+    }
+    
     
 }
 
-- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
-    // The number of items reflected in the page indicator.
-    return 3;
-}
-
-- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
-    // The selected item reflected in the page indicator.
-    return 0;
-}
+//- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
+//    // The number of items reflected in the page indicator.
+//    return 3;
+//}
+//
+//- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
+//    // The selected item reflected in the page indicator.
+//    return 0;
+//}
 
 @end
