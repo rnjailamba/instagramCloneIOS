@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
+                <outlet property="tabBar" destination="fAf-87-CHC" id="QaC-VC-Vxx"/>
                 <outlet property="tableView" destination="Dis-OI-FOO" id="Hcz-ED-k5G"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -93,19 +94,19 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                     <items>
-                        <tabBarItem image="home.png" id="eDy-Wd-TOm">
+                        <tabBarItem tag="1" image="home.png" id="eDy-Wd-TOm">
                             <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                         </tabBarItem>
-                        <tabBarItem image="search.png" id="g2h-lc-eoh">
+                        <tabBarItem tag="2" image="search.png" id="g2h-lc-eoh">
                             <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                         </tabBarItem>
-                        <tabBarItem image="cam.png" id="exy-Vc-QaU">
+                        <tabBarItem tag="3" image="cam.png" id="exy-Vc-QaU">
                             <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                         </tabBarItem>
-                        <tabBarItem image="love.png" id="sFp-3S-0Wn">
+                        <tabBarItem tag="4" image="love.png" id="sFp-3S-0Wn">
                             <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                         </tabBarItem>
-                        <tabBarItem title="" image="person.png" id="cbW-qx-Vy9">
+                        <tabBarItem tag="5" title="" image="person.png" id="cbW-qx-Vy9">
                             <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                             <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                         </tabBarItem>
