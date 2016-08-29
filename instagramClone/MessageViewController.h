@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol MessageViewControllerDelegate <NSObject>
+
+@required
+-(void)goToMainFromMessage;
+
+@end
+
 @interface MessageViewController : UIViewController
+
+@property id<MessageViewControllerDelegate> delegate;
 
 @end

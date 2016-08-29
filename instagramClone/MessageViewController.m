@@ -9,6 +9,7 @@
 #import "MessageViewController.h"
 
 @interface MessageViewController ()
+
 - (IBAction)plusClicked:(id)sender;
 - (IBAction)leftClicked:(id)sender;
 
@@ -37,7 +38,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)leftClicked:(id)sender{
+    [self.delegate goToMainFromMessage];
+}
 
 - (IBAction)plusClicked:(id)sender {
+
 }
+
 @end

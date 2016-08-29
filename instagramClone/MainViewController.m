@@ -12,6 +12,7 @@
 
 - (IBAction)mailClicked:(id)sender;
 - (IBAction)addClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 

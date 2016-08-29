@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FeedCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="440.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="440"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place.png" translatesAutoresizingMaskIntoConstraints="NO" id="FUv-yU-ew7">
+                        <rect key="frame" x="0.0" y="60" width="320" height="320"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="FUv-yU-ew7" secondAttribute="height" multiplier="1:1" id="Itg-Bv-vyh"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inn-Om-ROC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="seJ-wG-rOR">
+                                <rect key="frame" x="20" y="10" width="40" height="40"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tyf-ee-Ah6">
+                                <rect key="frame" x="68" y="18" width="184" height="14"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="more.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zi5-Zu-SKc">
+                                <rect key="frame" x="276" y="12" width="36" height="36"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87l-od-Y8z">
+                                <rect key="frame" x="68" y="36" width="184" height="14"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="jXa-jZ-9j5"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fmb-r7-wpa">
+                        <rect key="frame" x="0.0" y="380" width="320" height="60"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="like.png" translatesAutoresizingMaskIntoConstraints="NO" id="OQO-3Q-Yyv">
+                                <rect key="frame" x="20" y="12" width="36" height="36"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="share.png" translatesAutoresizingMaskIntoConstraints="NO" id="DZm-3g-WOb">
+                                <rect key="frame" x="120" y="12" width="36" height="36"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comment.png" translatesAutoresizingMaskIntoConstraints="NO" id="gSl-iy-zEx">
+                                <rect key="frame" x="70" y="12" width="36" height="36"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="kS7-bR-t2R"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="Fmb-r7-wpa" firstAttribute="top" secondItem="FUv-yU-ew7" secondAttribute="bottom" id="GEe-mT-EzL"/>
+                    <constraint firstItem="inn-Om-ROC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HPu-TZ-bKd"/>
+                    <constraint firstItem="FUv-yU-ew7" firstAttribute="top" secondItem="inn-Om-ROC" secondAttribute="bottom" id="L0j-qC-im5"/>
+                    <constraint firstAttribute="trailing" secondItem="FUv-yU-ew7" secondAttribute="trailing" id="Nun-fc-nh3"/>
+                    <constraint firstItem="FUv-yU-ew7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Xhz-Ge-XKa"/>
+                    <constraint firstItem="inn-Om-ROC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bwE-mF-r1p"/>
+                    <constraint firstItem="Fmb-r7-wpa" firstAttribute="top" secondItem="FUv-yU-ew7" secondAttribute="bottom" id="kHZ-rF-On0"/>
+                    <constraint firstItem="Fmb-r7-wpa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ka8-UB-g4b"/>
+                    <constraint firstItem="FUv-yU-ew7" firstAttribute="top" secondItem="inn-Om-ROC" secondAttribute="bottom" id="t19-Yk-m6l"/>
+                    <constraint firstAttribute="trailing" secondItem="Fmb-r7-wpa" secondAttribute="trailing" id="uJw-27-aVF"/>
+                    <constraint firstAttribute="trailing" secondItem="inn-Om-ROC" secondAttribute="trailing" id="vA5-WK-Ndp"/>
+                    <constraint firstAttribute="bottom" secondItem="Fmb-r7-wpa" secondAttribute="bottom" id="x9u-Xy-WAI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <point key="canvasLocation" x="316" y="402.25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar.png" width="64" height="64"/>
+        <image name="comment.png" width="64" height="64"/>
+        <image name="like.png" width="64" height="64"/>
+        <image name="more.png" width="64" height="64"/>
+        <image name="place.png" width="320" height="320"/>
+        <image name="share.png" width="64" height="64"/>
+    </resources>
+</document>

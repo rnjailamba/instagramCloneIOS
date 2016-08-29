@@ -12,7 +12,7 @@
 #import "MessageViewController.h"
 
 
-@interface ViewController () <UIPageViewControllerDataSource, StoryViewDelegate, MainViewControllerDelegate >
+@interface ViewController () <UIPageViewControllerDataSource, StoryViewDelegate, MainViewControllerDelegate, MessageViewControllerDelegate >
 
 @property (strong, nonatomic) UIPageViewController *pageController;
 @property (strong, nonatomic) MainViewController *mainVC;
@@ -38,6 +38,7 @@
     self.messageVC = [[MessageViewController alloc] initWithNibName:@"MessageViewController" bundle:nil];
     self.storyVC.delegate = self;
     self.mainVC.delegate = self;
+    self.messageVC.delegate = self;
 }
 
 -(void)setUpPageViewControllerToOpenToMain{
@@ -109,6 +110,12 @@
 -(void)goToMessageFromMainClicked{
     NSArray *viewControllers = [NSArray arrayWithObject:self.messageVC];
     [self.pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+}
+
+#pragma MessageViewControllerDelegate
+-(void)goToMainFromMessage{
+    NSArray *viewControllers = [NSArray arrayWithObject:self.mainVC];
+    [self.pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:nil];
 }
 
 

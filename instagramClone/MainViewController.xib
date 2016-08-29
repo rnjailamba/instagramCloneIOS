@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
+                <outlet property="tableView" destination="Dis-OI-FOO" id="Hcz-ED-k5G"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,10 +21,10 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRT-HR-HE7">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clonegram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLp-LN-QSP">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLp-LN-QSP">
                             <rect key="frame" x="60" y="21" width="200" height="35"/>
                             <animations/>
-                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                            <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="23"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -81,12 +82,21 @@
                         <constraint firstItem="Ejt-LV-gcb" firstAttribute="top" secondItem="UGO-5H-RLP" secondAttribute="top" id="zuJ-iD-ciT"/>
                     </constraints>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dis-OI-FOO">
+                    <rect key="frame" x="0.0" y="60" width="320" height="508"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
             </subviews>
             <animations/>
             <color key="backgroundColor" red="0.94602117770000005" green="1" blue="0.63736948630000001" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="zRT-HR-HE7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2cF-fc-mB6"/>
                 <constraint firstAttribute="bottom" secondItem="zRT-HR-HE7" secondAttribute="bottom" constant="508" id="3JB-I1-pVP"/>
+                <constraint firstItem="Dis-OI-FOO" firstAttribute="top" secondItem="zRT-HR-HE7" secondAttribute="bottom" id="6qZ-Xn-zGg"/>
+                <constraint firstAttribute="bottom" secondItem="Dis-OI-FOO" secondAttribute="bottom" id="BPn-Eg-Hzm"/>
+                <constraint firstItem="Dis-OI-FOO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ozy-9a-1B4"/>
+                <constraint firstAttribute="trailing" secondItem="Dis-OI-FOO" secondAttribute="trailing" id="rAT-XH-lE3"/>
                 <constraint firstItem="zRT-HR-HE7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uIi-x3-xuB"/>
                 <constraint firstAttribute="trailing" secondItem="zRT-HR-HE7" secondAttribute="trailing" id="xIZ-kB-FW2"/>
             </constraints>
