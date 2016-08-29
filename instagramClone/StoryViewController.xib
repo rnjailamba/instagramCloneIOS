@@ -32,7 +32,7 @@
                 </button>
             </subviews>
             <animations/>
-            <color key="backgroundColor" red="0.0" green="0.99072283319999999" blue="0.49842997030000002" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.99072283319999999" green="0.91243776060000004" blue="0.95973220810000004" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="NYn-V4-5yj" firstAttribute="bottom" secondItem="bHx-pF-xVR" secondAttribute="bottom" id="0Ye-7i-szh"/>
                 <constraint firstItem="NYn-V4-5yj" firstAttribute="leading" secondItem="bHx-pF-xVR" secondAttribute="leading" id="2vW-vP-Gwg"/>
