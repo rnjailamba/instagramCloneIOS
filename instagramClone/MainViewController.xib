@@ -9,7 +9,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
-                <outlet property="tabBar" destination="fAf-87-CHC" id="QaC-VC-Vxx"/>
                 <outlet property="tableView" destination="Dis-OI-FOO" id="Hcz-ED-k5G"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -89,43 +88,15 @@
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
-                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAf-87-CHC">
-                    <rect key="frame" x="0.0" y="519" width="320" height="49"/>
-                    <animations/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                    <items>
-                        <tabBarItem tag="1" image="home.png" id="eDy-Wd-TOm">
-                            <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
-                        </tabBarItem>
-                        <tabBarItem tag="2" image="search.png" id="g2h-lc-eoh">
-                            <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
-                        </tabBarItem>
-                        <tabBarItem tag="3" image="cam.png" id="exy-Vc-QaU">
-                            <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
-                        </tabBarItem>
-                        <tabBarItem tag="4" image="love.png" id="sFp-3S-0Wn">
-                            <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
-                        </tabBarItem>
-                        <tabBarItem tag="5" title="" image="person.png" id="cbW-qx-Vy9">
-                            <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
-                            <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                        </tabBarItem>
-                    </items>
-                </tabBar>
             </subviews>
             <animations/>
             <color key="backgroundColor" red="0.88794070510000001" green="0.88794070510000001" blue="0.88794070510000001" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="fAf-87-CHC" firstAttribute="top" secondItem="Dis-OI-FOO" secondAttribute="bottom" id="0AK-0M-9PO"/>
-                <constraint firstAttribute="bottom" secondItem="fAf-87-CHC" secondAttribute="bottom" id="0Hp-Za-Nij"/>
                 <constraint firstItem="zRT-HR-HE7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2cF-fc-mB6"/>
                 <constraint firstItem="Dis-OI-FOO" firstAttribute="top" secondItem="zRT-HR-HE7" secondAttribute="bottom" id="6qZ-Xn-zGg"/>
                 <constraint firstAttribute="bottom" secondItem="Dis-OI-FOO" secondAttribute="bottom" constant="49" id="BPn-Eg-Hzm"/>
                 <constraint firstItem="zRT-HR-HE7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DMd-dj-iWI"/>
                 <constraint firstItem="Dis-OI-FOO" firstAttribute="top" secondItem="zRT-HR-HE7" secondAttribute="bottom" id="VH1-hO-EB4"/>
-                <constraint firstAttribute="trailing" secondItem="fAf-87-CHC" secondAttribute="trailing" id="Y7d-YE-lF4"/>
-                <constraint firstItem="fAf-87-CHC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fnV-He-3L6"/>
                 <constraint firstItem="zRT-HR-HE7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lCI-YX-b82"/>
                 <constraint firstItem="Dis-OI-FOO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ozy-9a-1B4"/>
                 <constraint firstAttribute="trailing" secondItem="Dis-OI-FOO" secondAttribute="trailing" id="rAT-XH-lE3"/>
@@ -138,11 +109,6 @@
     </objects>
     <resources>
         <image name="add.png" width="32" height="32"/>
-        <image name="cam.png" width="32" height="32"/>
-        <image name="home.png" width="32" height="32"/>
-        <image name="love.png" width="32" height="32"/>
         <image name="mail.png" width="32" height="32"/>
-        <image name="person.png" width="32" height="32"/>
-        <image name="search.png" width="32" height="32"/>
     </resources>
 </document>

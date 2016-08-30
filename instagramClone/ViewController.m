@@ -91,8 +91,6 @@
     else{
         return nil;
     }
-    
-    
 }
 
 #pragma StoryViewDelegate

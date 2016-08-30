@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "FeedCell.h"
 #import "SearchViewController.h"
+#import "ViewController.h"
 
 
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate,UITabBarDelegate,UITabBarControllerDelegate>
@@ -54,44 +55,7 @@
     
     
     
-    MainViewController *viewController1 = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil] ;
-    SearchViewController *viewController2 = [[SearchViewController alloc] initWithNibName:@"SearchViewController" bundle:nil];
-    SearchViewController *viewController3 = [[SearchViewController alloc] initWithNibName:@"SearchViewController" bundle:nil];
-    SearchViewController *viewController4 = [[SearchViewController alloc] initWithNibName:@"SearchViewController" bundle:nil];
-    SearchViewController *viewController5 = [[SearchViewController alloc] initWithNibName:@"SearchViewController" bundle:nil];
-    
-    UINavigationController *navigationController1=[[UINavigationController alloc]initWithRootViewController:viewController1];
-    [navigationController1.navigationBar setBackgroundImage:[UIImage imageNamed:@"love.png"] forBarMetrics:UIBarMetricsDefault];
-    
-    UINavigationController *navigationController2=[[UINavigationController alloc]initWithRootViewController:viewController2];
-    [navigationController2.navigationBar setBackgroundImage:[UIImage imageNamed:@"person.png"] forBarMetrics:UIBarMetricsDefault];
-    
-    UINavigationController *navigationController3=[[UINavigationController alloc]initWithRootViewController:viewController3];
-    [navigationController3.navigationBar setBackgroundImage:[UIImage imageNamed:@"upwhitebg.png"] forBarMetrics:UIBarMetricsDefault];
-    
-    UINavigationController *navigationController4=[[UINavigationController alloc]initWithRootViewController:viewController4];
-    [navigationController4.navigationBar setBackgroundImage:[UIImage imageNamed:@"upwhitebg.png"] forBarMetrics:UIBarMetricsDefault];
-    
-    UINavigationController *navigationController5=[[UINavigationController alloc]initWithRootViewController:viewController5];
-    [navigationController5.navigationBar setBackgroundImage:[UIImage imageNamed:@"upwhitebg.png"] forBarMetrics:UIBarMetricsDefault];
-    
-    
-    [navigationController1.navigationBar setHidden:YES];
-    [navigationController2.navigationBar setHidden:YES];
-    [navigationController3.navigationBar setHidden:YES];
-    [navigationController4.navigationBar setHidden:YES];
-    [navigationController5.navigationBar setHidden:YES];
-    
-    
-    self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.delegate = self;
-    [self.tabBarController.tabBar setBackgroundColor:[UIColor clearColor]];
-    
-    self.tabBarController.tabBar.backgroundImage = [UIImage imageNamed:@"tabbar"];
-    [[[self tabBarController]tabBar]setSelectionIndicatorImage:[UIImage imageNamed:@"transparent.png"]];
-    [self.tabBarController setDelegate:self];
-    self.tabBarController.viewControllers = @[navigationController1, navigationController2,navigationController3,navigationController4,navigationController5];
-    self.window.rootViewController = self.tabBarController;
+
 
 }
 
@@ -116,7 +80,7 @@
     NSLog(@"Tab bar %ld",(long)item.tag);
     switch (item.tag) {
         case 1:{
-            MainViewController *mainVC = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
+            ViewController *mainVC = [[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
             [self.presentedViewController.view removeFromSuperview];
             [self.view addSubview:mainVC.view];
 
