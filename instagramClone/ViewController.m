@@ -10,7 +10,10 @@
 #import "StoryViewController.h"
 #import "MainViewController.h"
 #import "MessageViewController.h"
+#import <AFNetworking/AFNetworking.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
+#define flickrApiKey @"801b80fc0b9d4eb71a6ffc414c4b1304"
 
 @interface ViewController () <UIPageViewControllerDataSource, StoryViewDelegate, MainViewControllerDelegate, MessageViewControllerDelegate >
 
@@ -29,7 +32,43 @@
     self.view.frame = [[UIScreen mainScreen] bounds ];
     [self setUpViews];
     [self setUpPageViewControllerToOpenToMain];
+    [self getData];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)getData{
+//
+//URL: https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=801b80fc0b9d4eb71a6ffc414c4b1304&per_page=10&format=json&nojsoncallback=1&auth_token=&api_sig=
+    
+    NSDictionary *parameters = @{@"method":@"flickr.photos.search",
+                                 @"api_key":flickrApiKey,
+                                 @"auth_token":@"72157672126429802-58104f9d959f39ee",
+                                 @"api_sig":@"bb50c8a994c1cc410c92607e7d032eab",
+                                 @"format":@"json",
+                                 @"per_page":@"10",
+                                 @"nojsoncallback":@"1"};
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    [manager GET:@"https://api.flickr.com/services/rest"
+      parameters:parameters success:^(NSURLSessionTask *task, id responseObject) {
+        
+        //            Get data
+        
+        
+            id obj = [responseObject objectForKey:@"query"];
+            id pages = [obj objectForKey:@"pages"];
+
+            dispatch_async(dispatch_get_main_queue(), ^{
+
+                
+            });
+        
+        
+        
+    } failure:^(NSURLSessionTask *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+
 }
 
 -(void)setUpViews{
