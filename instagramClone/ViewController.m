@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "StoryViewController.h"
 #import "MainViewController.h"
+#import "MainParentViewController.h"
 #import "MessageViewController.h"
 #import <AFNetworking/AFNetworking.h>
 #import <SDWebImage/UIImageView+WebCache.h>
@@ -18,7 +19,7 @@
 @interface ViewController () <UIPageViewControllerDataSource, StoryViewDelegate, MainViewControllerDelegate, MessageViewControllerDelegate >
 
 @property (strong, nonatomic) UIPageViewController *pageController;
-@property (strong, nonatomic) MainViewController *mainVC;
+@property (strong, nonatomic) MainParentViewController *mainVC;
 @property (strong, nonatomic) StoryViewController *storyVC;
 @property (strong, nonatomic) MessageViewController *messageVC;
 
@@ -72,11 +73,11 @@
 }
 
 -(void)setUpViews{
-    self.mainVC = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+    self.mainVC = [[MainParentViewController alloc] initWithNibName:@"MainParentViewController" bundle:nil];
     self.storyVC = [[StoryViewController alloc] initWithNibName:@"StoryViewController" bundle:nil];
     self.messageVC = [[MessageViewController alloc] initWithNibName:@"MessageViewController" bundle:nil];
     self.storyVC.delegate = self;
-    self.mainVC.delegate = self;
+//    self.mainVC.delegate = self;
     self.messageVC.delegate = self;
 }
 

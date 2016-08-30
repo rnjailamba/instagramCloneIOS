@@ -33,31 +33,9 @@
     self.tabBar.delegate = self;
     [self registerNib];
     [self setUpTableView];
-    [self setUpTabBarController];
     // Do any additional setup after loading the view from its nib.
 }
 
--(void)setUpTabBarController{
-
-//
-//    MainViewController *mainVC = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
-//    SearchViewController *searchVC = [[SearchViewController alloc]initWithNibName:@"SearchViewController" bundle:nil];
-//    self.tabViewControllers = [[NSMutableArray alloc] init];
-//    [self.tabViewControllers addObject:mainVC];
-//    [self.tabViewControllers addObject:searchVC];
-//    [self.tabViewControllers addObject:searchVC];
-//    [self.tabViewControllers addObject:searchVC];
-//    [self.tabViewControllers addObject:searchVC];
-//
-//    self.tabBarController = [[UITabBarController alloc]init];
-//    self.tabBarController.viewControllers = self.tabViewControllers;
-    
-    
-    
-    
-
-
-}
 
 -(void)setUpTableView{
     self.tableView.dataSource = self;

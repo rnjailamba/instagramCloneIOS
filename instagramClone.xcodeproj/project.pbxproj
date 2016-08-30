@@ -21,6 +21,8 @@
 		63179B321D6EBD41001C4A35 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 63179B311D6EBD41001C4A35 /* plus.png */; };
 		63179B341D6EBD47001C4A35 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = 63179B331D6EBD47001C4A35 /* left.png */; };
 		63179B361D6EBD8A001C4A35 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 63179B351D6EBD8A001C4A35 /* right.png */; };
+		63964ED71D764D7800C1E197 /* MainParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63964ED51D764D7800C1E197 /* MainParentViewController.m */; };
+		63964ED81D764D7800C1E197 /* MainParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63964ED61D764D7800C1E197 /* MainParentViewController.xib */; };
 		63F6725F1D73A7120083164C /* FeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F6725D1D73A7120083164C /* FeedCell.m */; };
 		63F672601D73A7120083164C /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F6725E1D73A7120083164C /* FeedCell.xib */; };
 		63F672681D73DB3A0083164C /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F672611D73DB3A0083164C /* avatar.png */; };
@@ -66,6 +68,9 @@
 		63179B331D6EBD47001C4A35 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
 		63179B351D6EBD8A001C4A35 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
 		6363423E1CD86D25E6C96CB3 /* Pods-instagramClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-instagramClone/Pods-instagramClone.release.xcconfig"; sourceTree = "<group>"; };
+		63964ED41D764D7800C1E197 /* MainParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainParentViewController.h; sourceTree = "<group>"; };
+		63964ED51D764D7800C1E197 /* MainParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainParentViewController.m; sourceTree = "<group>"; };
+		63964ED61D764D7800C1E197 /* MainParentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainParentViewController.xib; sourceTree = "<group>"; };
 		63F6725C1D73A7120083164C /* FeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedCell.h; sourceTree = "<group>"; };
 		63F6725D1D73A7120083164C /* FeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedCell.m; sourceTree = "<group>"; };
 		63F6725E1D73A7120083164C /* FeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
@@ -170,6 +175,9 @@
 				63F97C901D6AB49B00F06FB1 /* ViewController.h */,
 				63F97C911D6AB49B00F06FB1 /* ViewController.m */,
 				02EC17811D6DEAC4001BFCFC /* ViewController.xib */,
+				63964ED41D764D7800C1E197 /* MainParentViewController.h */,
+				63964ED51D764D7800C1E197 /* MainParentViewController.m */,
+				63964ED61D764D7800C1E197 /* MainParentViewController.xib */,
 				02EC17851D6E0A97001BFCFC /* MainViewController.h */,
 				02EC17861D6E0A97001BFCFC /* MainViewController.m */,
 				02EC17871D6E0A97001BFCFC /* MainViewController.xib */,
@@ -291,6 +299,7 @@
 				63179B341D6EBD47001C4A35 /* left.png in Resources */,
 				02EC17931D6E0AB9001BFCFC /* StoryViewController.xib in Resources */,
 				63F97C971D6AB49B00F06FB1 /* Assets.xcassets in Resources */,
+				63964ED81D764D7800C1E197 /* MainParentViewController.xib in Resources */,
 				63F672851D73FD2D0083164C /* SearchViewController.xib in Resources */,
 				63F6726C1D73DB3A0083164C /* more.png in Resources */,
 				63F6726A1D73DB3A0083164C /* flike.png in Resources */,
@@ -369,6 +378,7 @@
 				63F97C8C1D6AB49B00F06FB1 /* main.m in Sources */,
 				63F672841D73FD2D0083164C /* SearchViewController.m in Sources */,
 				02EC17881D6E0A97001BFCFC /* MainViewController.m in Sources */,
+				63964ED71D764D7800C1E197 /* MainParentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
