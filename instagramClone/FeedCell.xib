@@ -36,9 +36,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="more.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zi5-Zu-SKc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="more.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zi5-Zu-SKc">
                                 <rect key="frame" x="276" y="12" width="36" height="36"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="3aJ-sY-CJw"/>
+                                    <constraint firstAttribute="height" constant="36" id="GmD-Xf-mdN"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87l-od-Y8z">
                                 <rect key="frame" x="68" y="36" width="184" height="14"/>
@@ -51,7 +55,9 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Zi5-Zu-SKc" secondAttribute="trailing" constant="8" id="iSK-E7-TAg"/>
                             <constraint firstAttribute="height" constant="60" id="jXa-jZ-9j5"/>
+                            <constraint firstItem="Zi5-Zu-SKc" firstAttribute="top" secondItem="inn-Om-ROC" secondAttribute="top" constant="12" id="xyB-4U-SuG"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fmb-r7-wpa" userLabel="Bottom View">
