@@ -6,5 +6,6 @@ Looking to incorporate the following -
  - 
  
     
-https://www.appcoda.com/uipageviewcontroller-tutorial-intro/
+https://www.appcoda.com/uipageviewcontroller-tutorial-intro/  
+http://stackoverflow.com/questions/26132532/how-do-you-programmatically-add-a-uitabbarcontroller-uinavigationcontroller-in
 
