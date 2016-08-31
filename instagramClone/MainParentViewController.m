@@ -56,8 +56,6 @@
     [[self.tabBarController.tabBar.items objectAtIndex:3] setImageInsets:UIEdgeInsetsMake(6, 0, -6, 0)];
     [[self.tabBarController.tabBar.items objectAtIndex:4] setImageInsets:UIEdgeInsetsMake(6, 0, -6, 0)];
     
-    
-    
     [self addChildViewController:self.tabBarController];
     [[self view] addSubview:[self.tabBarController view]];
     [self.tabBarController didMoveToParentViewController:self];

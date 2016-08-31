@@ -15,7 +15,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="440"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place.png" translatesAutoresizingMaskIntoConstraints="NO" id="FUv-yU-ew7">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FUv-yU-ew7">
                         <rect key="frame" x="0.0" y="60" width="320" height="320"/>
                         <animations/>
                         <constraints>
@@ -101,6 +101,9 @@
             </tableViewCellContentView>
             <animations/>
             <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="photo" destination="FUv-yU-ew7" id="ZmU-pJ-e3l"/>
+            </connections>
             <point key="canvasLocation" x="316" y="402.25"/>
         </tableViewCell>
     </objects>
@@ -109,7 +112,6 @@
         <image name="comment.png" width="64" height="64"/>
         <image name="like.png" width="64" height="64"/>
         <image name="more.png" width="64" height="64"/>
-        <image name="place.png" width="320" height="320"/>
         <image name="share.png" width="64" height="64"/>
     </resources>
 </document>

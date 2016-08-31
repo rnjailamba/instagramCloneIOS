@@ -10,4 +10,6 @@
 
 @interface FeedCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *photo;
+
 @end
